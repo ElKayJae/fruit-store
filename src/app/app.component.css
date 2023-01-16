@@ -1,0 +1,9 @@
+.side-by-side{
+    display: flex;
+    justify-content: start;
+    margin: 0vw 10vw;
+}
+
+.component{
+    margin-right: 10vw;
+}

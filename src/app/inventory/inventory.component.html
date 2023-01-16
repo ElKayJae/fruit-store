@@ -1,0 +1,16 @@
+<h1>Inventory</h1>
+    <table *ngFor="let i of fruitList">
+        <tr>
+            <td>
+                <img src="/assets/fruits/{{ i.url }}.png" width="50" alt="">
+            </td>
+            <td>
+                <h3> {{ i.name }}</h3>
+            </td>
+            <td>
+                <button (click)="increaseCount(i.name)">+</button>
+                <button (click)="decreaseCount(i.name)">-</button>
+            </td>
+        </tr>
+    </table>
+

@@ -1,0 +1,13 @@
+<h1>Cart</h1>
+
+<div *ngIf="fruits.length >= 1">
+    <div *ngFor="let i of fruits">
+        <h3>
+            <span>{{ i?.name }}</span>
+            <span *ngIf="i?.count != undefined"> count: {{ i?.count }}</span>
+        </h3>
+    </div>
+</div>
+<div *ngIf="fruits.length <= 0 ">
+    <h3>Your cart is empty</h3>
+</div>
