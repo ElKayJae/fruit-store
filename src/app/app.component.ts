@@ -39,7 +39,7 @@ export class AppComponent {
       console.info(count)
       if ( count-1 <= 0 || undefined) {
         console.info("less than 1")
-        delete this.fruitList[index]
+        this.fruitList.splice(index,1)
       }
       console.info("includes")
     }
